@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="404.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <MenuBar layoutX="200.0" layoutY="44.0" prefHeight="37.0" prefWidth="436.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Classe">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#showClassePage" text="Nouvelle classe" />
+                  <MenuItem mnemonicParsing="false" onAction="#showListerClasse" text="Liste des classes" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Eleve">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#showElevePage" text="Inscrire eleve" />
+                  <MenuItem mnemonicParsing="false" onAction="#showListerEleve" text="Liste des eleves" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Modification ou suppression de classes">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#showDeleteClasse" text="Supprimer classe" />
+                  <MenuItem mnemonicParsing="false" onAction="#showUpdateClasse" text="Modifier classe" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>

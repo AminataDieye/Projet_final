@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="407.0" prefWidth="627.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projet.ui.classe.DeleteController">
+   <children>
+      <Label layoutX="194.0" layoutY="38.0" prefHeight="26.0" prefWidth="265.0" text="Selectionner une classe">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <TableView fx:id="classe_table" layoutX="115.0" layoutY="83.0" onMouseClicked="#table_click" prefHeight="201.0" prefWidth="360.0">
+        <columns>
+          <TableColumn fx:id="id_column" prefWidth="151.0" text="Identifiant de la classe" />
+          <TableColumn fx:id="nom_column" prefWidth="204.0" text="Intitulé de la classe" />
+        </columns>
+      </TableView>
+      <Button fx:id="supprimer_bt" layoutX="228.0" layoutY="309.0" mnemonicParsing="false" onAction="#deleteClasse" prefHeight="37.0" prefWidth="99.0" text="Supprimer" textFill="#bf1313">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
